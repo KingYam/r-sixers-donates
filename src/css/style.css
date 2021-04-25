@@ -1,3 +1,12 @@
+@font-face {
+  font-family: '76ersreg';
+  src: url('/css/fonts/nba_76ers-webfont.woff2') format('woff2'),
+       url('/css/fonts/nba_76ers-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -7,11 +16,9 @@ html{
 }
 
 body {
-  background-color: #222;
+  background-color: #006bb6;
 	color: #fff;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+	font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
 	margin: 0;
 }
@@ -20,32 +27,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+h1 {
+  font-family: '76ersreg';
+  font-size: 7rem;
+}
+
 a,
 a:visited,
 a[href] {
   color: #61dafb;
-}
-
-#site {
-  text-align: center;
-}
-
-.logo {
-  margin: 2rem;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

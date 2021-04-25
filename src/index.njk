@@ -1,9 +1,21 @@
 ---
 layout: layouts/base.njk
-title: Learn Eleventy
+title: Home
 ---
-<div id="site">
-  <img src="img/logo.png" class="logo" alt="Eleventy logo" />
-  <p>Edit <code>src/index.njk</code> and save to reload.</p>
-  <a href="https://www.11ty.dev/" target="_blank" rel="noopener noreferrer">{{title}}</a>
+<div class="container">
+  <div class="row text-center">
+    <div class="col">
+      <h1>Let's Donate!</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h4>See below for some details for each post:<h4>
+      <ul>
+      {%- for post in collections.post -%}
+        <li>{{ post.data.title }}</li>
+      {%- endfor -%}
+      </ul>
+    </div>
+  </div>
 </div>
