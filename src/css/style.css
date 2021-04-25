@@ -37,3 +37,7 @@ a:visited,
 a[href] {
   color: #61dafb;
 }
+
+.post-list {
+  list-style: none;
+}
