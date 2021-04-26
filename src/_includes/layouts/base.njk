@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <meta name="author" content="{{ site.authorName }}">
     <meta name="description" content="{{ site.description }}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:title" content="{{ site.name }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:image" content="{{ site.previewImage | url }}">
+
+    <!-- Twitter -->
+    <meta property="twitter:url" content="{{ site.url }}">
+    <meta property="twitter:title" content="{{ site.name }}">
+    <meta property="twitter:description" content="{{ site.description }}">
+    <meta property="twitter:image" content="{{ site.previewImage | url }}">
+    
     <title>{{ title }} | {{ site.name }}</title>
     <link rel="icon" href="{{ site.favicon }}" type="image/png" />
     {# Bootstrap #}
@@ -13,9 +27,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     {# Google Font #}
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">  
     {# FontAwesome #}
     <script src="https://kit.fontawesome.com/9100fc78fd.js" crossorigin="anonymous"></script>
     {# CSS #}
