@@ -8,9 +8,9 @@ title: Home
       <h1 class="page-title pb-3">Let's Donate!</h1>
     </div>
   </div>
-  <div class="row justify-content-md-center">
+  <div class="row justify-content-md-center pt-5">
     <div class="col">
-      <p>This site is dedicated to tracking total donations from donation challenge posts found in <a href="https://reddit.com/r/sixers" target="_blank">r/sixers</a>, which are organized by our very own legendary local philanthrope and bball prophet <span class="minor-shout">u/mikeb32</span>.</p>
+      <p>This site is dedicated to tracking total donations from charity drive posts found in the <a href="https://reddit.com/r/sixers" target="_blank">r/sixers subreddit</a>, which are organized by our very own legendary local philanthrope and bball prophet <span class="minor-shout">u/mikeb32</span>. Thank you for all that you do!</p>
     </div>
   </div>
   <div class="row py-5">
@@ -19,12 +19,12 @@ title: Home
       {%- for post in collections.post -%}
         {% set grand_total = grand_total + post.data.totalDonations %}
       {%- endfor -%}
-      <p class="shout-out">r/sixers has donated a grand total of <br /><span class="shout-total">${{ grand_total }}</span></p>
+      <p class="shout-out">r/sixers has donated a grand total of <br /><span class="shout-total">${{ grand_total }}</span><br />and counting!</p>
     </div>
   </div>
   <div class="row pt-5">
     <div class="col-md-6">
-      <p>See below for some details for each post:<p>
+      <p class="post-list-title">Select a post below for more details:<p>
       <ul class="post-list">
       {%- for post in collections.post -%}
         <li class="post-list-item py-3"><a href="{{ post.url }}">{{ post.data.title }}</a></li>
@@ -70,7 +70,7 @@ title: Home
   </div>
   <div class="row py-5">
     <div class="col">
-      <p class="ty-message">A huge <span class="thank-you">THANK YOU</span> to everyone that donated and participated in these threads! It's people like you that truly make us the best fanbase in the league, and one we can all be proud to be apart of.</p>
+      <p class="ty-message">A huge <span class="thank-you">THANK YOU</span> to everyone that has donated and participated in these threads! It's people like you that truly make us the best fanbase in the league, and one we can all be proud to be apart of.</p>
       </div>
   </div>
 </div>

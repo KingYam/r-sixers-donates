@@ -48,6 +48,10 @@ a:hover {
   color: #ed174c;
 }
 
+.post-list-title {
+  font-size: 1.75rem;
+}
+
 .post-list {
   list-style-type: none;
   border-left: 3px solid #ed174c;
