@@ -12,11 +12,22 @@ layout: layouts/base.njk
             <h1 class="post-title pb-3">{{ title }}</h1>
         </div>
     </div>
-    <div class="row">
+    <div class="row pt-5">
         <div class="col">
             {{ content | safe }}
-            <a href="{{ threadLink }}" target="_blank">link to reddit thread</a>
-            <h3>Total Donations: ${{ totalDonations }}</h3>
+            <a href="{{ threadLink }}" target="_blank">Link to Thread</a>
+        </div>
+    </div>
+    <div class="row py-5">
+        <div class="col">
+            <p class="shout-out">Total Thread Donation: <br /><span class="shout-total">${{ totalDonations }}</span></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="disclaimer p-2 text-center">
+                <p class="d-inline"><strong>Important note:</strong> these totals are approximate as not everyone that donated posted totals and/or proof of donation.</p>
+            </div>
         </div>
     </div>
 </div>

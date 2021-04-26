@@ -9,7 +9,7 @@ title: Home
     </div>
   </div>
   <div class="row justify-content-md-center">
-    <div class="col-md-9">
+    <div class="col">
       <p>This site is dedicated to tracking total donations from donation challenge posts found in <a href="https://reddit.com/r/sixers" target="_blank">r/sixers</a>, which are set up by our very own legendary local philanthrope u/mikeb32.</p>
     </div>
   </div>
@@ -19,7 +19,7 @@ title: Home
       {%- for post in collections.post -%}
         {% set grand_total = grand_total + post.data.totalDonations %}
       {%- endfor -%}
-      <p class="shout-out">r/sixers has donated a grand total of <span class="shout-total">${{ grand_total }}</span></p>
+      <p class="shout-out">r/sixers has donated a grand total of <br /><span class="shout-total">${{ grand_total }}</span></p>
     </div>
   </div>
   <div class="row pt-5">
@@ -62,7 +62,7 @@ title: Home
                 }]
             },
             options: {
-              color: '#fff'
+              color: '#fff',
             }
         });
       </script>

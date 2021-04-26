@@ -38,13 +38,14 @@ a,
 a:visited,
 a[href] {
   color: #fff;
-  transition: color 0.2s;
+  transition: color 0.2s, font-size 0.2s;
   text-decoration: none;
   font-weight: bold;
 }
 
 a:hover {
   color: #ed174c;
+  font-size: 1.3rem;
 }
 
 .post-list {
@@ -88,7 +89,7 @@ a:hover {
   display: inline;
   border-bottom: 10px solid #ed174c;
   font-family: '76ersreg';
-  font-size: 7rem;
+  font-size: 6rem;
 }
 
 .shout-out {
@@ -102,4 +103,17 @@ a:hover {
   font-family: '76ersreg';
   color: #ed174c;
   text-shadow: 2px 2px #fff;
+}
+
+.post-total {
+  font-size: 3rem;
+  font-family: '76ersreg';
+  color: #ed174c;
+  text-shadow: 2px 2px #fff;
+}
+
+.disclaimer {
+  color: #006bb6;
+  background-color: #fff;
+  border-radius: 5px;
 }
