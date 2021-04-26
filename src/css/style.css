@@ -100,7 +100,7 @@ a:hover {
   display: inline;
   border-bottom: 0;
   font-family: '76ersreg';
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 .shout-out {
@@ -185,6 +185,7 @@ a:hover {
     font-size: 5rem;
   }
   .post-title {
+    font-size: 6rem;
     border-bottom: 10px solid #ed174c;
   }
   .mobile-bottom-border {
