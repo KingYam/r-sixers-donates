@@ -1,4 +1,7 @@
 {
   "name": "r/Sixers Donates",
-  "language": "en"
+  "language": "en",
+  "favicon": "/img/ttp.png",
+  "authorName": "u/folebear",
+  "description": "This site is dedicated to tracking total donations from donation challenge posts found in r/sixers, which are organized by our very own legendary local philanthrope and bball prophet u/mikeb32."
 }

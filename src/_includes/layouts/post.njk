@@ -3,19 +3,27 @@ layout: layouts/base.njk
 ---
 <div class="container">
     <div class="row pb-5">
-        <div class="col-md-2 align-self-center py-3">
-            <a href="/">
-                <i class="back fas fa-arrow-left"></i>
+        <div class="col-md align-self-center py-3 d-flex justify-content-between">
+            <a href="/" class="home-arrow">
+                <i class="fas fa-arrow-left"></i>
             </a>
+            <a class="thread-link d-md-none" href="{{ threadLink }}" target="_blank"><i class="fab fa-reddit-alien"></i></a>
         </div>
-        <div class="col-md">
+        <div class="col-md-8 text-md-center mobile-bottom-border">
             <h1 class="post-title pb-3">{{ title }}</h1>
         </div>
+        <div class="col-md py-3 text-end d-none d-md-block">
+            <a class="thread-link" href="{{ threadLink }}" target="_blank"><i class="fab fa-reddit-alien"></i></a>
+        </div>
     </div>
-    <div class="row pt-5">
-        <div class="col">
-            {{ content | safe }}
-            <a href="{{ threadLink }}" target="_blank">Link to Thread</a>
+    <div class="row justify-content-between">
+        <div class="col-md-8 py-4">
+            <p class="post-challenge">The Challenge:</p>
+            <p class="challenge-desc"><i>{{ desc }}</i></p>
+        </div>
+        <div class="col-md-4 py-4">
+            <p class="post-challenge">The Donee:</p>
+            <p class="challenge-desc"><a href="{{ doneeLink }}" target="_blank">{{ donee }} <i class="fas fa-external-link-alt"></i></a></p>
         </div>
     </div>
     <div class="row py-5">
@@ -23,7 +31,7 @@ layout: layouts/base.njk
             <p class="shout-out">Total Thread Donation: <br /><span class="shout-total">${{ totalDonations }}</span></p>
         </div>
     </div>
-    <div class="row">
+    <div class="row pb-5">
         <div class="col">
             <div class="disclaimer p-2 text-center">
                 <p class="d-inline"><strong>Important note:</strong> these totals are approximate as not everyone that donated posted totals and/or proof of donation.</p>
