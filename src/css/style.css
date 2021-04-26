@@ -31,6 +31,7 @@ body {
 
 .footer {
   flex-shrink: 0;
+  border-bottom: 10px solid #ed174c;
 }
 
 h1 {
@@ -75,4 +76,26 @@ a:hover {
   margin-bottom: 0;
   margin-left: -109px;
   margin-top: 1px;
+}
+
+.back {
+  font-size: 5rem;
+}
+
+.page-title {
+  display: inline;
+  border-bottom: 10px solid #ed174c;
+}
+
+.shout-out {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.shout-total {
+  font-size: 3.5rem;
+  font-family: '76ersreg';
+  color: #ed174c;
+  text-shadow: 2px 2px #fff;
 }

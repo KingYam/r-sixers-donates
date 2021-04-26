@@ -5,12 +5,21 @@ title: Home
 <div class="container">
   <div class="row text-md-center pb-5">
     <div class="col">
-      <h1>Let's Donate!</h1>
+      <h1 class="page-title pb-3">Let's Donate!</h1>
     </div>
   </div>
   <div class="row pb-5 justify-content-md-center">
     <div class="col-md-9">
       <p>This site is dedicated to tracking total donations from donation challenge posts found in <a href="https://reddit.com/r/sixers" target="_blank">r/sixers</a>, which are set up by our very own legendary local philanthrope u/mikeb32.</p>
+    </div>
+  </div>
+  <div class="row pb-5">
+    <div class="col">
+      {%- set grand_total = 0 -%}
+      {%- for post in collections.post -%}
+        {% set grand_total = grand_total + post.data.totalDonations %}
+      {%- endfor -%}
+      <p class="shout-out">r/sixers has donated a grand total of <span class="shout-total">${{ grand_total }}</span></p>
     </div>
   </div>
   <div class="row">
