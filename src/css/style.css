@@ -34,11 +34,6 @@ body {
   border-bottom: 10px solid #ed174c;
 }
 
-h1 {
-  font-family: '76ersreg';
-  font-size: 10rem;
-}
-
 a,
 a:visited,
 a[href] {
@@ -85,6 +80,15 @@ a:hover {
 .page-title {
   display: inline;
   border-bottom: 10px solid #ed174c;
+  font-family: '76ersreg';
+  font-size: 10rem;
+}
+
+.post-title {
+  display: inline;
+  border-bottom: 10px solid #ed174c;
+  font-family: '76ersreg';
+  font-size: 7rem;
 }
 
 .shout-out {

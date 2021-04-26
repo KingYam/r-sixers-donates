@@ -3,18 +3,19 @@ layout: layouts/base.njk
 ---
 <div class="container">
     <div class="row pb-5">
-        <div class="col-md-4 align-self-center py-3">
+        <div class="col-md-2 align-self-center py-3">
             <a href="/">
                 <i class="back fas fa-arrow-left"></i>
             </a>
         </div>
         <div class="col-md">
-            <h1 class="page-title pb-3">{{ title }}</h1>
+            <h1 class="post-title pb-3">{{ title }}</h1>
         </div>
     </div>
     <div class="row">
         <div class="col">
-            <p>Description of the challenge and/or charity with <a href="#">link to reddit thread here</a></p>
+            {{ content | safe }}
+            <a href="{{ threadLink }}" target="_blank">link to reddit thread</a>
             <h3>Total Donations: ${{ totalDonations }}</h3>
         </div>
     </div>
