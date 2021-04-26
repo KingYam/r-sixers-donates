@@ -27,7 +27,7 @@ title: Home
       <p class="post-list-title">Select a post below for more details:<p>
       <ul class="post-list">
       {%- for post in collections.post -%}
-        <li class="post-list-item py-3"><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+        <li class="post-list-item py-3"><a href="{{ post.url }}">{{ post.data.title }} - {{ post.data.humanDate }}</a></li>
       {%- endfor -%}
       </ul>
     </div>

@@ -9,14 +9,15 @@ layout: layouts/base.njk
             </a>
             <a class="thread-link d-md-none text-end" href="{{ threadLink }}" target="_blank"><i class="fab fa-reddit-alien"></i><p class="thread-link-copy d-md-none">See the Thread</p></a>
         </div>
-        <div class="col-md-8 pt-4 text-md-center mobile-bottom-border">
+        <div class="col-md-8 pt-4 text-md-center bottom-border">
+            <p class="post-date mt-4">{{ humanDate }}</p>
             <h1 class="post-title pb-3">{{ title }}</h1>
         </div>
-        <div class="col-md py-3 text-end d-none d-md-block">
+        <div class="col-md align-self-center py-3 text-end d-none d-md-block">
             <a class="thread-link" href="{{ threadLink }}" target="_blank"><i class="fab fa-reddit-alien"></i><p class="thread-link-copy">See the Thread</p></a>
         </div>
     </div>
-    <div class="row justify-content-between">
+    <div class="row pt-5 justify-content-between">
         <div class="col-md-8 py-4">
             <p class="post-challenge">The Challenge:</p>
             <p class="challenge-desc"><i>{{ desc }}</i></p>
