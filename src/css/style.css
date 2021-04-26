@@ -32,6 +32,7 @@ body {
 .footer {
   flex-shrink: 0;
   border-bottom: 10px solid #ed174c;
+  overflow-y: hidden;
 }
 
 a,
@@ -162,6 +163,13 @@ a:hover {
 
 .mobile-bottom-border {
   border-bottom: 10px solid #ed174c;
+}
+
+.jojo {
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 
