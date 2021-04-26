@@ -161,6 +161,11 @@ a:hover {
   font-size: 5rem;
 }
 
+.thread-link-copy {
+  font-size: 1rem;
+  text-shadow: none;
+}
+
 .home-arrow:hover, .thread-link:hover {
   text-shadow: 2px 2px #ffffff;
 }

@@ -7,13 +7,13 @@ layout: layouts/base.njk
             <a href="/" class="home-arrow">
                 <i class="fas fa-arrow-left"></i>
             </a>
-            <a class="thread-link d-md-none" href="{{ threadLink }}" target="_blank"><i class="fab fa-reddit-alien"></i></a>
+            <a class="thread-link d-md-none text-end" href="{{ threadLink }}" target="_blank"><i class="fab fa-reddit-alien"></i><p class="thread-link-copy d-md-none">See the Thread</p></a>
         </div>
-        <div class="col-md-8 text-md-center mobile-bottom-border">
+        <div class="col-md-8 pt-4 text-md-center mobile-bottom-border">
             <h1 class="post-title pb-3">{{ title }}</h1>
         </div>
         <div class="col-md py-3 text-end d-none d-md-block">
-            <a class="thread-link" href="{{ threadLink }}" target="_blank"><i class="fab fa-reddit-alien"></i></a>
+            <a class="thread-link" href="{{ threadLink }}" target="_blank"><i class="fab fa-reddit-alien"></i><p class="thread-link-copy">See the Thread</p></a>
         </div>
     </div>
     <div class="row justify-content-between">
