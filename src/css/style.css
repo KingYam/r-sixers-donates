@@ -88,6 +88,7 @@ a:hover {
 
 .post-list-title {
   font-size: 1.75rem;
+  font-weight: bold;
 }
 
 .post-list {
@@ -98,15 +99,15 @@ a:hover {
 .post-list-item {
   font-family: '76ersreg';
   font-size: 1.5rem;
-  /* list-style-image: url('/img/stars.png'); */
+  text-shadow: 1px 1px #ed174c;
 }
 
 .post-list-item a {
-  transition: font-size 0.2s;
+  transition: text-shadow 0.2s;
 }
 
 .post-list-item a:hover {
-  font-size: 1.6rem;
+  text-shadow: 1px 1px#fff;
 }
 
 .stars-img {
@@ -125,6 +126,7 @@ a:hover {
   margin-bottom: 0;
   margin-left: -109px;
   margin-top: 1px;
+  text-shadow: 2px 2px #ed174c;
 }
 
 .page-title {
@@ -132,6 +134,7 @@ a:hover {
   border-bottom: 10px solid #ed174c;
   font-family: '76ersreg';
   font-size: 7rem;
+  text-shadow: 2px 2px #ed174c;
 }
 
 .post-title {
@@ -139,6 +142,7 @@ a:hover {
   border-bottom: 0;
   font-family: '76ersreg';
   font-size: 5rem;
+  text-shadow: 2px 2px #ed174c;
 }
 
 .post-date {
