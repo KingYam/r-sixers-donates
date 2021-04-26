@@ -11,8 +11,8 @@
 	box-sizing: border-box;
 }
 
-html{
-	overflow-y: scroll;
+html, body {
+  height: 100%;
 }
 
 body {
@@ -21,23 +21,58 @@ body {
 	font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
 	margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+.wrapper {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
 }
 
 h1 {
   font-family: '76ersreg';
-  font-size: 7rem;
+  font-size: 10rem;
 }
 
 a,
 a:visited,
 a[href] {
-  color: #61dafb;
+  color: #fff;
+  transition: color 0.2s;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ed174c;
 }
 
 .post-list {
   list-style: none;
+}
+
+.post-list li {
+  font-family: '76ersreg';
+}
+
+.stars-img {
+  width: 150px;
+  transition: transform 1s ease-in-out;
+}
+
+.stars-img:hover {
+  transform: rotate(-90deg);
+}
+
+.ttp {
+  display: inline;
+  font-family: '76ersreg';
+  font-size: 3rem;
+  margin-bottom: 0;
+  margin-left: -109px;
+  margin-top: 1px;
 }

@@ -6,7 +6,7 @@
   "license": "MIT",
   "description": "Simple eleventy starter site",
   "scripts": {
-    "serve": "npx @11ty/eleventy --serve --input=src --output=dist --formats=html,njk,gif,png,jpg,webp,css,js,woff,woff2",
-    "build": "npx @11ty/eleventy --input=src --output=dist --formats=html,njk,gif,png,jpg,webp,css,js,woff,woff2"
+    "serve": "npx @11ty/eleventy --serve --input=src --output=dist --formats=html,njk,gif,svg,png,jpg,webp,css,js,woff,woff2",
+    "build": "npx @11ty/eleventy --input=src --output=dist --formats=html,njk,gif,svg,png,jpg,webp,css,js,woff,woff2"
   }
 }

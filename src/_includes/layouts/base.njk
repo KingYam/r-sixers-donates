@@ -17,9 +17,22 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.0/dist/chart.min.js"></script>
   </head>
   <body>
-  <div class="mt-5">
+    <div class="wrapper">
     {{ content | safe }}
-  </div>
+    </div>
+    <div class="footer container-fluid">
+      <div class="row justify-content-center">
+        <div class="col text-center">
+          <div class="d-flex">
+            <a href="/">
+              <img class="stars-img" src="{{ '/img/stars.svg' | url }}" />
+            </a>
+            <p class="ttp align-self-center">TTP</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
   <script src="{{ '/js/scripts.js' | url }}"></script>
   </body>
 </html>
