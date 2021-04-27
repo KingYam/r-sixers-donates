@@ -262,7 +262,7 @@ a:hover {
     /* border-bottom: 10px solid #ed174c; */
   }
   .thank-you {
-    display: block;	  
+    display: inline;	  
   }
   
 }
