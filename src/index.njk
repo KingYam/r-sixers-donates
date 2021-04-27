@@ -27,7 +27,7 @@ title: Home
       <p class="post-list-title">Select a post below for more details:<p>
       <ul class="post-list">
       {%- for post in collections.post -%}
-        <li class="post-list-item py-3"><a href="{{ post.url }}">{{ post.data.title }} - {{ post.data.humanDate }}</a></li>
+        <li class="post-list-item py-2"><a href="{{ post.url }}"><span class="post-list-item-date">{{ post.data.humanDate }}</span><br />{{ post.data.title }}</a></li>
       {%- endfor -%}
       </ul>
     </div>
@@ -40,7 +40,7 @@ title: Home
             data: {
                 labels: [
                   {%- for post in collections.post -%}
-                    '{{ post.data.donee }}',
+                    '{{ post.data.doneeShort }}',
                   {%- endfor -%}
                   ],
                 datasets: [{

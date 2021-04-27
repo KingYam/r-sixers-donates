@@ -18,13 +18,13 @@ layout: layouts/base.njk
         </div>
     </div>
     <div class="row pt-5 justify-content-between">
-        <div class="col-md-8 py-4">
+        <div class="col-md-7 py-4">
             <p class="post-challenge">The Challenge:</p>
-            <p class="challenge-desc"><i>{{ desc }}</i></p>
+            <p class="challenge-desc-left"><i>{{ desc }}</i></p>
         </div>
-        <div class="col-md-4 py-4">
+        <div class="col-md-4 py-4 text-end">
             <p class="post-challenge">The Donee:</p>
-            <p class="challenge-desc"><a href="{{ doneeLink }}" target="_blank">{{ donee }} <i class="fas fa-external-link-alt"></i></a></p>
+            <p class="challenge-desc-right"><a href="{{ doneeLink }}" target="_blank">{{ donee }} <i class="fas fa-external-link-alt"></i></a></p>
         </div>
     </div>
     <div class="row py-5">
@@ -32,8 +32,8 @@ layout: layouts/base.njk
             <p class="shout-out">Total Thread Donation: <br /><span class="shout-total">${{ totalDonations }}</span></p>
         </div>
     </div>
-    <div class="row pb-5">
-        <div class="col">
+    <div class="row justify-content-center pb-5">
+        <div class="col-md-7">
             <div class="disclaimer p-2 text-center">
                 <p class="d-inline"><strong>Important note:</strong> these totals are approximate as not everyone that donated posted totals and/or proof of donation.</p>
             </div>
