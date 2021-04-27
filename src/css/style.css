@@ -25,6 +25,15 @@ body {
   flex-direction: column;
 }
 
+.texture-bg {
+	pointer-events: none;
+	background: url('https://rsixersdonates.com/img/jersey.jpg');
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	opacity: 0.5;
+}
+
 .wrapper {
   flex: 1 0 auto;
   border-top: 3px solid #ed174c;
