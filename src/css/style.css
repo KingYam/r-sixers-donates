@@ -189,6 +189,7 @@ a:hover {
   color: #ed174c;
   text-shadow: 2px 2px #fff;
   font-weight: bold;
+  display: inherit;
 }
 
 .ty-message {
@@ -259,6 +260,9 @@ a:hover {
   .post-title {
     font-size: 6rem;
     /* border-bottom: 10px solid #ed174c; */
+  }
+  .thank-you {
+    display: block;	  
   }
   
 }
