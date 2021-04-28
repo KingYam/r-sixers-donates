@@ -6,7 +6,7 @@ This site was built using [eleventy](https://www.11ty.dev/) and is hosted on [Ne
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f8c452db-b138-450a-8281-01edac666591/deploy-status)](https://app.netlify.com/sites/eager-spence-1c7002/deploys)
 
 ## Development
----
+
 ### Start the dev server
 ```
 npm run serve
