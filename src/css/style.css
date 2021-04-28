@@ -36,16 +36,16 @@ body {
 
 .wrapper {
   flex: 1 0 auto;
-  border-top: 3px solid #ed174c;
-  border-left: 3px solid #ed174c;
-  border-right: 3px solid #ed174c;
+  border-top: 10px solid #ed174c;
+  border-left: 10px solid #ed174c;
+  border-right: 10px solid #ed174c;
   position: relative;
 }
 
 .wrapper::before {
-  border-top: 3px solid #fff;
-  border-left: 3px solid #fff;
-  border-right: 3px solid #fff;
+  border-top: 10px solid #fff;
+  border-left: 10px solid #fff;
+  border-right: 10px solid #fff;
   content: "";
   display: block;
   position: absolute;
@@ -58,15 +58,15 @@ body {
 
 .footer-wrapper {
   position: relative;
-  border-bottom: 3px solid #ed174c;
-  border-left: 3px solid #ed174c;
-  border-right: 3px solid #ed174c;
+  border-bottom: 10px solid #ed174c;
+  border-left: 10px solid #ed174c;
+  border-right: 10px solid #ed174c;
 }
 
 .footer-wrapper::before {
-  border-bottom: 3px solid #fff;
-  border-left: 3px solid #fff;
-  border-right: 3px solid #fff;
+  border-bottom: 10px solid #fff;
+  border-left: 10px solid #fff;
+  border-right: 10px solid #fff;
   content: "";
   display: block;
   position: absolute;
