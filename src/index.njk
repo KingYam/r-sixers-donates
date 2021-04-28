@@ -31,8 +31,9 @@ title: Home
       {%- endfor -%}
       </ul>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 align-self-center">
       <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.0/dist/chart.min.js"></script>
+      <script src="{{ "/js/patternomaly.js" | url }}"></script>
       <canvas id="myChart" width="400" height="400"></canvas>
       <script>
         var ctx = document.getElementById('myChart')
@@ -51,24 +52,48 @@ title: Home
                         {{ post.data.totalDonations }},
                       {%- endfor -%}
                     ],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
+                    backgroundColor: [             
+                      '#ed174c',
+                      '#006bb6',
+                      '#fa6975',
+                      '#cdd8ed',
+                      '#ff9ea1',
+                      '#9bb2db',
+                      '#648dc9',
+                      '#ffcfcf',                       
+                    ].concat(pattern.generate([  
+                      '#ed174c',
+                      '#006bb6',
+                      '#fa6975',
+                      '#cdd8ed',
+                      '#ff9ea1',
+                      '#9bb2db',
+                      '#648dc9',  
+                      '#ffcfcf',  
+                    ])),
                     borderWidth: 0,
                 }]
             },
             options: {
               color: '#fff',
+              plugins: {
+                legend: {
+                  position: 'bottom',
+                  align: 'left',
+                }
+              }
             }
         });
       </script>
     </div>
   </div>
+  <div class="row justify-content-center pb-5">
+        <div class="col-md-9">
+            <div class="disclaimer p-2 text-center">
+                <p class="d-inline"><strong>Important note:</strong> these totals are approximate as not everyone that donated posted totals and/or proof of donation.</p>
+            </div>
+        </div>
+    </div>
   <div class="row py-5 justify-content-center">
     <div class="col-md-10">
       <p class="ty-message">An enormous and resounding <span class="thank-you">THANK YOU</span> to everyone that has donated and participated in these threads! It's people like you that truly make us the best fanbase in the league, and one we can all be proud to be apart of.</p>

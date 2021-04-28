@@ -156,6 +156,7 @@ a:hover {
   font-family: '76ersreg';
   font-size: 5rem;
   text-shadow: 2px 2px #ed174c;
+  line-height: 5rem;
 }
 
 .post-date {
@@ -256,6 +257,7 @@ a:hover {
   }
   .post-title {
     font-size: 7rem;
+    line-height: 6.5rem;
   }
   .challenge-desc-left {
     border-left: 5px solid #ed174c;
