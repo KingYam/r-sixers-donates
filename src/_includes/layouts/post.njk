@@ -7,13 +7,13 @@ layout: layouts/base.njk
             <a href="/" class="home-arrow">
                 <i class="fas fa-arrow-left"></i>
             </a>
-            <a class="thread-link d-md-none text-end" href="{{ threadLink }}" target="_blank"><i class="fab fa-reddit-alien"></i><p class="thread-link-copy d-md-none">See the Thread</p></a>
+            <a class="thread-link d-md-none text-right" href="{{ threadLink }}" target="_blank"><i class="fab fa-reddit-alien"></i><p class="thread-link-copy d-md-none">See the Thread</p></a>
         </div>
         <div class="col-md-8 pt-md-4 text-md-center">
             <p class="post-date mt-4">{{ humanDate }}</p>
             <h1 class="post-title pb-3">{{ title }}</h1>
         </div>
-        <div class="col-md align-self-center py-3 text-end d-none d-md-block">
+        <div class="col-md align-self-center py-3 text-right d-none d-md-block">
             <a class="thread-link" href="{{ threadLink }}" target="_blank"><i class="fab fa-reddit-alien"></i><p class="thread-link-copy">See the Thread</p></a>
         </div>
     </div>
@@ -22,7 +22,7 @@ layout: layouts/base.njk
             <p class="post-challenge">The Challenge:</p>
             <p class="challenge-desc-left"><i>{{ desc }}</i></p>
         </div>
-        <div class="col-md-4 py-4 text-end">
+        <div class="col-md-4 py-4 text-right">
             <p class="post-challenge">The Donee:</p>
             <p class="challenge-desc-right"><a href="{{ doneeLink }}" target="_blank">{{ donee }} <i class="fas fa-external-link-alt"></i></a></p>
         </div>
