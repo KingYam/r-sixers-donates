@@ -10,6 +10,9 @@
     "build": "npx @11ty/eleventy --input=src --output=dist --formats=html,njk,gif,svg,png,jpg,webp,webm,css,js,woff,woff2"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap": "^4.6.0",
+    "chart.js": "^3.2.0",
     "patternomaly": "^1.3.2"
   }
 }
