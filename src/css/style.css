@@ -243,6 +243,10 @@ a:hover {
   right: 0;
 }
 
+#myChart:hover {
+  cursor: pointer;
+}
+
 
 @media (min-width: 768px) {
   .page-title {

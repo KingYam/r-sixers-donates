@@ -83,7 +83,19 @@ title: Home
                   position: 'bottom',
                   align: 'left',
                 }
-              }
+              },
+              onClick: function(event){
+                   var chosenSlice = event.chart.tooltip.dataPoints[0].label;
+                   switch(chosenSlice) {
+                     {%- for post in collections.post -%}
+                          case '{{ post.data.doneeShort }}':
+                            window.location.href = '{{ post.url }} ';
+                            break;
+                    {%- endfor -%}
+                    default:
+                      break;
+                    }
+              },
             }
         });
       </script>
