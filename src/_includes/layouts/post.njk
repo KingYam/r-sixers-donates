@@ -29,7 +29,7 @@ layout: layouts/base.njk
     </div>
     <div class="row py-5">
         <div class="col">
-            <p class="shout-out">Total Thread Donation: <br /><span class="shout-total">${{ totalDonations }}</span></p>
+            <p class="shout-out">Total Thread Donation: <br /><span class="shout-total">$<script>document.write(({{ totalDonations }}).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,'));</script></span></p>
         </div>
     </div>
     <div class="row justify-content-center pb-5">

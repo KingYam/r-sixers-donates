@@ -19,7 +19,7 @@ title: Home
       {%- for post in collections.post -%}
         {% set grand_total = grand_total + post.data.totalDonations %}
       {%- endfor -%}
-      <p class="shout-out">r/sixers has donated a grand total of <br /><span class="shout-total">${{ grand_total }}</span><br />and counting!</p>
+      <p class="shout-out">r/sixers has donated a grand total of <br /><span class="shout-total">$<script>document.write(({{ grand_total }}).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,'));</script></span><br />and counting!</p>
     </div>
   </div>
 </div>
