@@ -98,6 +98,7 @@ a:hover {
 .post-list-title {
   font-size: 1.75rem;
   font-weight: bold;
+  border-bottom: 5px solid #ed174c;
 }
 
 .post-list {
@@ -110,6 +111,8 @@ a:hover {
   font-size: 1.5rem;
   text-shadow: 1px 1px #ed174c;
   line-height: 1.5rem;
+  page-break-inside: avoid;
+  break-inside: avoid;
 }
 
 .post-list-item a {
@@ -255,6 +258,10 @@ a:hover {
   .post-list {
     border-left: 5px solid #ed174c;
     padding-left: 1.5rem;
+    columns: 2;
+  }
+  .post-list-title {
+    border-bottom: none;
   }
   .shout-total {
     font-size: 5rem;
