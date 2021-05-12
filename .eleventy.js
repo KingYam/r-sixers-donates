@@ -6,5 +6,6 @@ module.exports = function (eleventyConfig) {
         "node_modules/@fortawesome/fontawesome-free/css/all.min.css": "css/all.min.css",
         "node_modules/@fortawesome/fontawesome-free/webfonts": "webfonts",
         "node_modules/bootstrap/dist/css/bootstrap.min.css": "css/bootstrap.min.css",
-    });
+    })
+    .setTemplateFormats("html,liquid,njk,md");
 };
