@@ -135,12 +135,7 @@ a:hover {
 
 .stars-img {
   width: 150px;
-  /* transition: transform 1s ease-in-out; */
   animation: stars-spin 15s linear infinite;
-}
-
-.stars-img:hover {
-  /* transform: rotate(-90deg); */
 }
 
 .ttp {
@@ -251,6 +246,13 @@ a:hover {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.ben {
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 30px;
 }
 
 #myChart:hover {
