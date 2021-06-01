@@ -1,0 +1,42 @@
+---
+layout: layouts/base.njk
+---
+<div class="container">
+    <div class="row pb-5">
+        <div class="col-md align-self-center py-3 d-flex justify-content-between">
+            <a href="/" class="home-arrow">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <a class="thread-link d-md-none text-right" href="{{ threadLink }}" target="_blank" rel="noreferrer"><i class="fab fa-reddit-alien"></i><p class="thread-link-copy d-md-none">See the Thread</p></a>
+        </div>
+        <div class="col-md-8 pt-md-4 text-md-center">
+            <p class="post-date mt-4">{{ humanDate }}</p>
+            <h1 class="post-title pb-3">{{ title }}</h1>
+        </div>
+        <div class="col-md align-self-center py-3 text-right d-none d-md-block">
+            <a class="thread-link" href="{{ threadLink }}" target="_blank" rel="noreferrer"><i class="fab fa-reddit-alien"></i><p class="thread-link-copy">See the Thread</p></a>
+        </div>
+    </div>
+    <div class="row pt-5 justify-content-between">
+        <div class="col-md-7 py-4">
+            <p class="post-challenge">The Challenge:</p>
+            <p class="challenge-desc-left"><i>{{ desc }}</i></p>
+        </div>
+        <div class="col-md-4 py-4 text-right">
+            <p class="post-challenge">The Donee:</p>
+            <p class="challenge-desc-right"><a href="{{ doneeLink }}" target="_blank" rel="noreferrer">{{ donee }} <i class="fas fa-external-link-alt"></i></a></p>
+        </div>
+    </div>
+    <div class="row py-5">
+        <div class="col">
+            <p class="shout-out">Total Thread Donation: <br /><span class="shout-total">$<script>document.write(({{ totalDonations }}).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,'));</script></span></p>
+        </div>
+    </div>
+    <div class="row justify-content-center pb-5">
+        <div class="col-md-9">
+            <div class="disclaimer p-2 text-center">
+                <p class="d-inline"><strong>Important note:</strong> these numbers are approximate as not everyone that donated posted totals and/or proof of donation.</p>
+            </div>
+        </div>
+    </div>
+</div>
