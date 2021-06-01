@@ -7,29 +7,38 @@ layout: layouts/base.njk
             <a href="/" class="home-arrow">
                 <i class="fas fa-arrow-left"></i>
             </a>
-            <a class="thread-link d-md-none text-right" href="{{ threadLink }}" target="_blank" rel="noreferrer"><i class="fab fa-reddit-alien"></i><p class="thread-link-copy d-md-none">See the Thread</p></a>
         </div>
         <div class="col-md-8 pt-md-4 text-md-center">
             <p class="post-date mt-4">{{ humanDate }}</p>
             <h1 class="post-title pb-3">{{ title }}</h1>
         </div>
-        <div class="col-md align-self-center py-3 text-right d-none d-md-block">
-            <a class="thread-link" href="{{ threadLink }}" target="_blank" rel="noreferrer"><i class="fab fa-reddit-alien"></i><p class="thread-link-copy">See the Thread</p></a>
-        </div>
+        <div class="col-md-2"></div>
     </div>
     <div class="row pt-5 justify-content-between">
         <div class="col-md-7 py-4">
-            <p class="post-challenge">The Challenge:</p>
-            <p class="challenge-desc-left"><i>{{ desc }}</i></p>
+            <p class="post-challenge">The Challenge Posts:</p>
+            <ul class="challenge-desc-left no-bullet">
+            {%- for post in posts -%}
+                <li class="py-3"><a href="{{ post.threadLink }}"><i class="fab fa-reddit-alien"></i> {{ post.desc }}</a></li>
+            {%- endfor -%}
+            </ul>
         </div>
         <div class="col-md-4 py-4 text-right">
-            <p class="post-challenge">The Donee:</p>
-            <p class="challenge-desc-right"><a href="{{ doneeLink }}" target="_blank" rel="noreferrer">{{ donee }} <i class="fas fa-external-link-alt"></i></a></p>
+            <p class="post-challenge">The Donees:</p>
+            <ul class="challenge-desc-right no-bullet">
+                {%- for post in posts -%}
+                    <li class="py-3"><a href="{{ post.doneeLink }}">{{ post.donee }} <i class="fas fa-external-link-alt"></i></a></li>
+                {%- endfor -%}
+            </ul>
         </div>
     </div>
     <div class="row py-5">
         <div class="col">
-            <p class="shout-out">Total Thread Donation: <br /><span class="shout-total">$<script>document.write(({{ totalDonations }}).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,'));</script></span></p>
+            {%- set grand_total = 0 -%}
+            {%- for post in posts -%}
+                {% set grand_total = grand_total + post.donation %}
+            {%- endfor -%}
+            <p class="shout-out">Total Round Donations: <br /><span class="shout-total">$<script>document.write(({{ grand_total }}).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,'));</script></span></p>
         </div>
     </div>
     <div class="row justify-content-center pb-5">

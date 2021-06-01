@@ -16,7 +16,7 @@ title: Home
   <div class="row py-5">
     <div class="col">
       {%- set grand_total = 0 -%}
-      {%- for post in collections.post -%}
+      {%- for post in collections.total -%}
         {% set grand_total = grand_total + post.data.totalDonations %}
       {%- endfor -%}
       <p class="shout-out">r/sixers has donated a grand total of <br /><span class="shout-total">$<script>document.write(({{ grand_total }}).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,'));</script></span><br />and counting!</p>
@@ -37,9 +37,9 @@ title: Home
   <div class="row py-5 justify-content-center">
     <div class="col-md-10">
       <p class="post-list-title pb-md-2 pb-3 pl-3">2021 Playoffs:</p>
-      <ul class="post-list pt-4">
+      <ul class="post-list single-col pt-4">
       {%- for post in collections.2021_playoff -%}
-        <li class="post-list-item py-3 pr-2"><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+        <li class="post-list-item py-3 pr-2"><a href="{{ post.url }}"><span class="post-list-item-date">{{ post.data.humanDate }}</span><br />{{ post.data.title }}</a></li>
       {%- endfor -%}
       </ul>
     </div>
@@ -60,14 +60,14 @@ title: Home
             type: 'pie',
             data: {
                 labels: [
-                  {%- for post in collections.post -%}
+                  {%- for post in collections.total -%}
                     '{{ post.data.doneeShort }}',
                   {%- endfor -%}
                   ],
                 datasets: [{
                     label: 'Donations',
                     data: [
-                      {%- for post in collections.post -%}
+                      {%- for post in collections.total -%}
                         {{ post.data.totalDonations }},
                       {%- endfor -%}
                     ],

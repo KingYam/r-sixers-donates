@@ -285,6 +285,13 @@ a:hover {
 
 }
 
+.single-col {
+  columns: 1;
+}
+.no-bullet {
+    list-style: none;
+  }
+
 
 @media (min-width: 768px) {
   .page-title {
@@ -333,5 +340,12 @@ a:hover {
     border-bottom: 10px solid #fff;
     border-left: 10px solid #fff;
     border-right: 10px solid #fff;
+  }
+
+  .single-col {
+    columns: 1;
+  }
+  .no-bullet {
+    list-style: none;
   }
 }
