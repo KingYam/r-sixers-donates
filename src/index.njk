@@ -104,7 +104,7 @@ title: Home
               onClick: function(event){
                   var chosenSlice = event.chart.tooltip.dataPoints[0].label;
                   switch(chosenSlice) {
-                    {%- for post in collections.post -%}
+                    {%- for post in collections.total -%}
                           case '{{ post.data.doneeShort }}':
                             window.location.href = '{{ post.url }} ';
                             break;
