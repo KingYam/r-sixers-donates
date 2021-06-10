@@ -278,6 +278,20 @@ a:hover {
   animation-iteration-count: infinite;
 }
 
+.post-series {
+  font-family: '76ersreg';
+  font-size: 2rem;
+  text-shadow: -1.5px 1.5px #fff;
+  color: #ed174c;
+}
+
+.outcome {
+  font-family: '76ersreg';
+  font-size: 2rem;
+  text-shadow: -1.5px 1.5px #fff;
+  color: #ed174c;
+}
+
 
 @keyframes bounce {
   from { transform: translate3d(0,0,0); }

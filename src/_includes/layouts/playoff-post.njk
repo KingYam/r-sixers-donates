@@ -19,7 +19,7 @@ layout: layouts/base.njk
             <p class="post-challenge">The Challenge Posts:</p>
             <ul class="challenge-desc-left no-bullet">
             {%- for post in posts -%}
-                <li class="py-3"><a href="{{ post.threadLink }}"><i class="fab fa-reddit-alien"></i> {{ post.desc }}</a></li>
+                <li class="py-3"><a href="{{ post.threadLink }}"><i class="fab fa-reddit-alien"></i> {{ post.desc }} <span class="outcome">{{ post.outcome }}</span></a></li>
             {%- endfor -%}
             </ul>
         </div>
