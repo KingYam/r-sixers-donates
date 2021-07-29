@@ -307,6 +307,13 @@ a:hover {
     list-style: none;
   }
 
+.top-total, .top-num {
+  color: #ed174c;
+  text-shadow: -2px 2px #fff;
+  font-weight: bold;
+  display: block;
+  line-height: 3rem;
+}
 
 @media (min-width: 768px) {
   .page-title {
@@ -362,5 +369,14 @@ a:hover {
   }
   .no-bullet {
     list-style: none;
+  }
+
+ .top-total {
+    font-size: 2.5rem;
+  }
+
+  .top-num, .top-total {
+    display: inherit;
+    line-height: inherit;
   }
 }

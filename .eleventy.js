@@ -6,6 +6,9 @@ module.exports = function (eleventyConfig) {
         "node_modules/@fortawesome/fontawesome-free/css/all.min.css": "css/all.min.css",
         "node_modules/@fortawesome/fontawesome-free/webfonts": "webfonts",
         "node_modules/bootstrap/dist/css/bootstrap.min.css": "css/bootstrap.min.css",
-    })
-    .setTemplateFormats("html,liquid,njk,md");
+    });
+    eleventyConfig.setTemplateFormats("html,liquid,njk,md");
+    eleventyConfig.addCollection("top3Donations", function(collectionApi) {
+        return collectionApi.getFilteredByTag("total").sort((a, b) => b.data.totalDonations - a.data.totalDonations).slice(0,3);
+      });
 };
