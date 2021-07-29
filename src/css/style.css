@@ -162,6 +162,7 @@ a:hover {
   font-size: 5rem;
   text-shadow: -2px 2px #ed174c;
   line-height: 5rem;
+  word-break: break-word;
 }
 
 .post-date {
