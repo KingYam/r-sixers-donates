@@ -44,19 +44,9 @@ title: Home
   </div>
   <div class="row py-5 justify-content-center">
     <div class="col-md-10">
-      <p class="post-list-title pb-md-2 pb-3 pl-3">2019 & 2020 Seasons:</p>
+      <p class="post-list-title pb-md-2 pb-3 pl-3">Past Seasons:</p>
       <ul class="post-list pt-4">
       {%- for post in collections.past_seasons -%}
-        <li class="post-list-item py-3 pr-2"><a href="{{ post.url }}"><span class="post-list-item-date">{{ post.data.humanDate }}</span><br />{{ post.data.title }}</a></li>
-      {%- endfor -%}
-      </ul>
-    </div>
-  </div>
-  <div class="row py-5 justify-content-center">
-    <div class="col-md-10">
-      <p class="post-list-title pb-md-2 pb-3 pl-3">2021 Playoffs:</p>
-      <ul class="post-list pt-4">
-      {%- for post in collections.2021_playoff -%}
         <li class="post-list-item py-3 pr-2"><a href="{{ post.url }}"><span class="post-list-item-date">{{ post.data.humanDate }}</span><br />{{ post.data.title }}</a></li>
       {%- endfor -%}
       </ul>
