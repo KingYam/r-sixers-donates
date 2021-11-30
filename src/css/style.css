@@ -114,6 +114,7 @@ a:hover {
   line-height: 2rem;
   page-break-inside: avoid;
   break-inside: avoid;
+  display: table;
 }
 
 .post-list-item a {
