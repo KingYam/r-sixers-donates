@@ -308,6 +308,10 @@ a:hover {
     list-style: none;
   }
 
+.top-num {
+  font-size: 3rem;
+}
+
 .top-total, .top-num {
   color: #ed174c;
   text-shadow: -2px 2px #fff;
