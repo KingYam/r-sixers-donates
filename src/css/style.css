@@ -139,6 +139,11 @@ a:hover {
   animation: stars-spin 15s linear infinite;
 }
 
+.ttp-container {
+  z-index: 1;
+  position: relative;
+}
+
 .ttp {
   display: inline;
   font-family: '76ersreg';
