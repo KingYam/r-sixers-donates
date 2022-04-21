@@ -27,7 +27,7 @@ layout: layouts/base.njk
             <p class="post-challenge">The Donees:</p>
             <ul class="challenge-desc-right no-bullet">
                 {%- for post in posts -%}
-                    <li class="py-3"><a href="{{ post.doneeLink }}">{{ post.donee }} <i class="fas fa-external-link-alt"></i></a></li>
+                    <li class="py-3"><a href="{{ post.doneeLink }}" target="_blank">{{ post.donee }} <i class="fas fa-external-link-alt"></i></a></li>
                 {%- endfor -%}
             </ul>
         </div>
