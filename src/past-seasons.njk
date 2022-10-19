@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+---
+<div class="container">
+    <div class="row pb-5">
+        <div class="col-md align-self-center py-3 d-flex justify-content-between">
+            <a href="/" class="home-arrow">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <a class="thread-link d-md-none text-right" href="{{ threadLink }}" target="_blank" rel="noreferrer"><i class="fab fa-reddit-alien"></i><p class="thread-link-copy d-md-none">See the Thread</p></a>
+        </div>
+        <div class="col-md-8 pt-md-4 text-md-center">
+            <h1 class="post-title pb-3">Past Season Posts</h1>
+        </div>
+        <div class="col-md align-self-center py-3 text-right d-none d-md-block"></div>
+    </div>
+    <div class="row py-5 justify-content-center">
+        <div class="col-md-10">
+            <ul class="post-list pt-4">
+            {%- for post in collections.past_seasons -%}
+                <li class="post-list-item py-3 pr-2"><a href="{{ post.url }}"><span class="post-list-item-date">{{ post.data.humanDate }}</span><br />{{ post.data.title }}</a></li>
+            {%- endfor -%}
+            </ul>
+        </div>
+  </div>
+</div>

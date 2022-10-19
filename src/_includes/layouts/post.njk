@@ -4,9 +4,15 @@ layout: layouts/base.njk
 <div class="container">
     <div class="row pb-5">
         <div class="col-md align-self-center py-3 d-flex justify-content-between">
+            {%- if '/past' in page.url -%}
+            <a href="/past-seasons" class="home-arrow">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            {%- else -%}
             <a href="/" class="home-arrow">
                 <i class="fas fa-arrow-left"></i>
             </a>
+            {%- endif -%}
             <a class="thread-link d-md-none text-right" href="{{ threadLink }}" target="_blank" rel="noreferrer"><i class="fab fa-reddit-alien"></i><p class="thread-link-copy d-md-none">See the Thread</p></a>
         </div>
         <div class="col-md-8 pt-md-4 text-md-center">
