@@ -6,7 +6,7 @@ module.exports = function (eleventyConfig) {
         "node_modules/@fortawesome/fontawesome-free/css/all.min.css": "css/all.min.css",
         "node_modules/@fortawesome/fontawesome-free/webfonts": "webfonts",
         "node_modules/bootstrap/dist/css/bootstrap.min.css": "css/bootstrap.min.css",
-        "node_modules/countup.js/dist/countUp.js": "js/countUp.js"
+        "node_modules/countup.js/dist/countUp.js": "js/countUp.js",
     });
     eleventyConfig.setTemplateFormats("html,liquid,njk,md");
     eleventyConfig.addCollection("top3Donations", function(collectionApi) {
