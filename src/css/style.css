@@ -234,13 +234,18 @@ a:hover {
   padding-right: 0;
 }
 
-.home-arrow, .thread-link {
+.home-arrow, .thread-link, .archive-link {
   text-shadow: -2px 2px #ed174c;
   font-size: 5rem;
 }
 
 .thread-link-copy {
   font-size: 1rem;
+  text-shadow: none;
+}
+
+.archive-link-copy {
+  font-size: 1.75rem;
   text-shadow: none;
 }
 

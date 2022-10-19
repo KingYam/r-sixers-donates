@@ -10,17 +10,38 @@ layout: layouts/base.njk
             <a class="thread-link d-md-none text-right" href="{{ threadLink }}" target="_blank" rel="noreferrer"><i class="fab fa-reddit-alien"></i><p class="thread-link-copy d-md-none">See the Thread</p></a>
         </div>
         <div class="col-md-8 pt-md-4 text-md-center">
-            <h1 class="post-title pb-3">Past Season Posts</h1>
+            <h1 class="post-title pb-3">Past Seasons</h1>
         </div>
         <div class="col-md align-self-center py-3 text-right d-none d-md-block"></div>
     </div>
     <div class="row py-5 justify-content-center">
         <div class="col-md-10">
+            <p class="post-list-title pb-md-2 pb-3 pl-3">2019 Season:</p>
             <ul class="post-list pt-4">
-            {%- for post in collections.past_seasons -%}
+            {%- for post in collections.2019_season -%}
                 <li class="post-list-item py-3 pr-2"><a href="{{ post.url }}"><span class="post-list-item-date">{{ post.data.humanDate }}</span><br />{{ post.data.title }}</a></li>
             {%- endfor -%}
             </ul>
         </div>
-  </div>
+    </div>
+    <div class="row py-5 justify-content-center">
+        <div class="col-md-10">
+            <p class="post-list-title pb-md-2 pb-3 pl-3">2020 Season:</p>
+            <ul class="post-list pt-4">
+            {%- for post in collections.2020_season -%}
+                <li class="post-list-item py-3 pr-2"><a href="{{ post.url }}"><span class="post-list-item-date">{{ post.data.humanDate }}</span><br />{{ post.data.title }}</a></li>
+            {%- endfor -%}
+            </ul>
+        </div>
+    </div>
+    <div class="row py-5 justify-content-center">
+        <div class="col-md-10">
+            <p class="post-list-title pb-md-2 pb-3 pl-3">2021 Season:</p>
+            <ul class="post-list pt-4">
+            {%- for post in collections.2021_season -%}
+                <li class="post-list-item py-3 pr-2"><a href="{{ post.url }}"><span class="post-list-item-date">{{ post.data.humanDate }}</span><br />{{ post.data.title }}</a></li>
+            {%- endfor -%}
+            </ul>
+        </div>
+    </div>
 </div>
