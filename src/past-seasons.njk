@@ -16,9 +16,9 @@ layout: layouts/base.njk
     </div>
     <div class="row py-5 justify-content-center">
         <div class="col-md-10">
-            <p class="post-list-title pb-md-2 pb-3 pl-3">2019 Season:</p>
+            <p class="post-list-title pb-md-2 pb-3 pl-3">2021 Season:</p>
             <ul class="post-list pt-4">
-            {%- for post in collections.2019_season -%}
+            {%- for post in collections.2021_season -%}
                 <li class="post-list-item py-3 pr-2"><a href="{{ post.url }}"><span class="post-list-item-date">{{ post.data.humanDate }}</span><br />{{ post.data.title }}</a></li>
             {%- endfor -%}
             </ul>
@@ -36,9 +36,9 @@ layout: layouts/base.njk
     </div>
     <div class="row py-5 justify-content-center">
         <div class="col-md-10">
-            <p class="post-list-title pb-md-2 pb-3 pl-3">2021 Season:</p>
+            <p class="post-list-title pb-md-2 pb-3 pl-3">2019 Season:</p>
             <ul class="post-list pt-4">
-            {%- for post in collections.2021_season -%}
+            {%- for post in collections.2019_season -%}
                 <li class="post-list-item py-3 pr-2"><a href="{{ post.url }}"><span class="post-list-item-date">{{ post.data.humanDate }}</span><br />{{ post.data.title }}</a></li>
             {%- endfor -%}
             </ul>
